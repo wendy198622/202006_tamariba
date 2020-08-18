@@ -64,6 +64,7 @@ header .innerBox .contact .list:last-child {
 
 section .theme {
   padding-top: 50px;
+  position: relative;
 }
 
 section .theme .contaier {
@@ -113,8 +114,8 @@ section .theme .contaier .imgBox .mob {
 
 @media (max-width: 960px) {
   section .theme .contaier .imgBox {
-    width: 66%;
-    left: 17%;
+    width: 84%;
+    left: 8%;
   }
   section .theme .contaier .imgBox .pc {
     display: none;
@@ -157,11 +158,13 @@ section .theme .contaier .txtBox h2, section .theme .contaier .txtBox h3, sectio
 section .theme .contaier .title {
   width: 540px;
   margin: 0 auto;
+  position: relative;
+  z-index: 5;
 }
 
 @media (max-width: 800px) {
   section .theme .contaier .title {
-    width: 80%;
+    width: 70%;
   }
 }
 
@@ -170,6 +173,8 @@ section .theme .contaier .timer {
   margin: 0 auto;
   padding: 50px 0;
   overflow: hidden;
+  position: relative;
+  z-index: 5;
 }
 
 @media (max-width: 1200px) {
@@ -235,11 +240,13 @@ section .theme .contaier .timer .sec:after {
 section .theme .contaier .intro {
   width: 525px;
   margin: 0 auto;
+  position: relative;
+  z-index: 5;
 }
 
 @media (max-width: 800px) {
   section .theme .contaier .intro {
-    width: 80%;
+    width: 76%;
   }
 }
 
@@ -290,19 +297,66 @@ section .theme .contaier .intro .btn a span {
   font-size: 24px;
 }
 
+section .theme .contaier .icon {
+  width: 13%;
+  position: absolute;
+  bottom: 10%;
+  right: 50%;
+  -webkit-transform: translateX(300%);
+          transform: translateX(300%);
+  z-index: 5;
+}
+
+section .theme .contaier .icon .pc {
+  display: block;
+}
+
+section .theme .contaier .icon .mob {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  section .theme .contaier .icon {
+    width: 30%;
+    position: relative;
+    bottom: unset;
+    right: unset;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    margin: 5% auto 0;
+  }
+  section .theme .contaier .icon .pc {
+    display: none;
+  }
+  section .theme .contaier .icon .mob {
+    display: block;
+  }
+}
+
+@media (max-width: 520px) {
+  section .theme .contaier .icon {
+    width: 55%;
+  }
+}
+
 section .theme .contaier .features {
   width: 75%;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
   z-index: 5;
-  text-align: center;
 }
 
 @media (max-width: 1200px) {
   section .theme .contaier .features {
     width: 70%;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 960px) {
+  section .theme .contaier .features {
+    width: 90%;
   }
 }
 
@@ -329,7 +383,6 @@ section .theme .contaier .mapBox {
   width: 58%;
   height: 480px;
   float: left;
-  background-color: #EF8200;
 }
 
 @media (max-width: 960px) {
@@ -341,7 +394,7 @@ section .theme .contaier .mapBox {
 
 @media (max-width: 960px) and (orientation: portrait) {
   section .theme .contaier .mapBox {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     height: 300px;
   }
@@ -349,17 +402,7 @@ section .theme .contaier .mapBox {
 
 @media (max-width: 800px) {
   section .theme .contaier .mapBox {
-    width: 80%;
-    margin: 0 auto;
     height: 200px;
-  }
-}
-
-@media (max-width: 600px) {
-  section .theme .contaier .mapBox {
-    width: 90%;
-    height: 0;
-    padding-bottom: 40%;
   }
 }
 
@@ -593,6 +636,13 @@ section .theme3 .bg {
   background-color: #4DBCBC;
 }
 
+@media (max-width: 800px) {
+  section .theme3 .bg {
+    padding-bottom: 28%;
+    top: 28%;
+  }
+}
+
 section .theme3 .bg > div {
   position: absolute;
 }
@@ -625,6 +675,12 @@ section .theme3 .bg .ship2 {
   }
 }
 
+@media (max-width: 800px) {
+  section .theme3 .bg .ship2 {
+    width: 5%;
+  }
+}
+
 section .theme3 .bg .ship3 {
   width: 2%;
   top: 0%;
@@ -639,6 +695,12 @@ section .theme3 .bg .ship3 {
   }
 }
 
+@media (max-width: 800px) {
+  section .theme3 .bg .ship3 {
+    width: 5%;
+  }
+}
+
 section .theme3 .bg .ship4 {
   width: 6%;
   top: -30%;
@@ -650,6 +712,12 @@ section .theme3 .bg .ship4 {
 @media (max-width: 1400px) {
   section .theme3 .bg .ship4 {
     top: -20%;
+  }
+}
+
+@media (max-width: 800px) {
+  section .theme3 .bg .ship4 {
+    width: 10%;
   }
 }
 
@@ -678,8 +746,14 @@ section .theme3 .bg .skyscraper {
   width: 15%;
   bottom: 20%;
   right: -7%;
-  -webkit-animation: 120s turn360 infinite;
-          animation: 120s turn360 infinite;
+  -webkit-animation: 80s turn360 infinite;
+          animation: 80s turn360 infinite;
+}
+
+@media (max-width: 800px) {
+  section .theme3 .bg .skyscraper {
+    width: 27%;
+  }
 }
 
 @-webkit-keyframes turn360 {
