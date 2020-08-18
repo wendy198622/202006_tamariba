@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>好好窩</title>
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="Resource-type" content="" />
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<!-- js -->
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/fullpage.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script type="text/javascript" src="js/vue.js"></script>
+	<script type="text/javascript" src="js/moment.min.js"></script>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+
+<body>
+	<div id="app">
+		<header>
+			<div class="innerBox">
+				<h1>
+					<img src="img/logo.svg" alt="">
+				</h1>
+				<div class="contact">
+					<div class="list">
+						<a href="tel:0426582313">
+							<img src="img/phone.svg" alt="">
+						</a>
+					</div>
+					<div class="list">
+						<a href="https://www.facebook.com/HOCHU2020/">
+							<img src="img/facebook.svg" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section id="fullpage" class="fullpage">
+			<div class="section theme theme1">
+				<div class="contaier">
+					<div class="txtBox">
+						<h2 class="wow bounceInUp"><img src="img/title.svg" alt=""></h2>
+						<h3 class="wow bounceInUp" data-wow-delay="0.5s"><img src="img/subtitle.svg" alt=""></h3>
+						<h4 class="wow bounceInUp" data-wow-delay="1s"><img src="img/desc.svg" alt=""></h4>
+					</div>
+					<div class="imgBox">
+						<img class="pc wow bounceInUp" data-wow-delay="0.8s" src="img/mainImg.svg" alt="">
+						<img class="mob wow bounceInUp" data-wow-delay="0.8s" src="img/mainImg_s.svg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="section theme theme2">
+				<div class="contaier">
+					<div class="title wow bounceInUp">
+						<img src="img/theme2_title.svg" alt="">
+					</div>
+					<div class="timer wow bounceInUp" data-wow-delay="0.5s">
+						<div class="item day">
+							<span>{{day}}</span>
+						</div>
+						<div class="item hour">
+							<span>{{hour}}</span>
+						</div>
+						<div class="item min">
+							<span>{{min}}</span>
+						</div>
+						<div class="item sec">
+							<span>{{sec}}</span>
+						</div>
+					</div>
+					<div class="intro">
+						<div class="desc wow bounceInUp" data-wow-delay="1s"><img src="img/theme2_desc.svg" alt="">
+						</div>
+						<div class="phone wow bounceInUp" data-wow-delay="1.5s">預約專線（04）2658-2313</div>
+						<div class="btn wow bounceInUp" data-wow-delay="2s">
+							<a href="tel:0426582313">
+								<i class="material-icons">phone</i>
+								<span>立即致電</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="bg">
+					<div class="cloud_left"><img src="img/cloud1.svg" alt=""></div>
+					<div class="cloud_right"><img src="img/cloud2.svg" alt=""></div>
+					<div class="ribbon"></div>
+				</div>
+			</div>
+			<div class="section theme theme3">
+				<div class="contaier">
+					<div class="features">
+						<div class="item wow bounceInUp">
+							<img src="img/feature1.svg" alt="">
+						</div>
+						<div class="item wow bounceInUp" data-wow-delay=".5s">
+							<img src="img/feature2.svg" alt="">
+						</div>
+						<div class="item wow bounceInUp" data-wow-delay="1s">
+							<img src="img/feature3.svg" alt="">
+						</div>
+						<div class="item wow bounceInUp" data-wow-delay="1.5s">
+							<img src="img/feature4.svg" alt="">
+						</div>
+						<!-- <div class="item wow bounceInUp" data-wow-delay="2s">
+							<img src="img/feature5.svg" alt="">
+						</div> -->
+						<div class="item wow bounceInUp" data-wow-delay="2.5s">
+							<img src="img/feature6.svg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="bg">
+					<div class="ship1"><img src="img/ship1.svg" alt=""></div>
+					<div class="ship2"><img src="img/ship2.svg" alt=""></div>
+					<div class="ship3"><img src="img/ship3.svg" alt=""></div>
+					<div class="ship4"><img src="img/ship4.svg" alt=""></div>
+					<div class="leaf"><img src="img/leaf.svg" alt=""></div>
+					<div class="house"><img src="img/house.svg" alt=""></div>
+					<div class="skyscraper"><img src="img/skyscraper.svg" alt=""></div>
+				</div>
+			</div>
+			<div class="section theme theme4">
+				<div class="contaier">
+					<div class="mapBox wow bounceInUp">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3637.3921658675526!2d120.53307991499118!3d24.263029284339115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDE1JzQ2LjkiTiAxMjDCsDMyJzA3LjAiRQ!5e0!3m2!1szh-TW!2stw!4v1593579173772!5m2!1szh-TW!2stw"
+							width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""
+							aria-hidden="false" tabindex="0"></iframe>
+					</div>
+					<div class="formBox wow bounceInUp" data-wow-delay="1s">
+						<h2><img src="img/theme4_title.svg" alt=""></h2>
+						<div class="form">
+							<div class="item">
+								<span>姓名*</span>
+								<input type="text" v-model="name" name="name" placeholder="姓名*" required />
+							</div>
+							<div class="item">
+								<span>聯絡電話*</span>
+								<input type="text" v-model="phone" name="tel" placeholder="聯絡電話*" required />
+							</div>
+							<div class="item">
+								<span>電子信箱</span>
+								<input type="text" v-model="email" name="email" placeholder="電子信箱(選填)" />
+							</div>
+
+							<button v-on:click="sendEmail()">立即預約</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="popup" v-bind:class="{ is_acted: popupIndex != 0 }">
+				<div class="popup_message">{{msg}}</div>
+				<!-- <div class="close" >OK</div> -->
+			</div>
+		</section>
+		<footer>
+			隱私權政策 | Copyright 2020 | 和築建設
+		</footer>
+	</div>
+</body>
+<script>
+	$(document).ready(function () {
+
+		new WOW().init();
+
+		var myFullpage = new fullpage('#fullpage', {
+			anchors: ['01', '02', '03', '04'],
+			sectionsColor: ['#EF8200', '#fff', '#fff', '#fff'],
+			navigation: false,
+			// navigationPosition: 'right',
+			navigationTooltips: ['01', '02', '03', '04'],
+			scrollBar: true,
+			responsiveWidth: 320
+		});
+
+	});
+
+	new Vue({
+		el: '#app',
+		data: {
+			popupIndex: 0,
+			name: "",
+			phone: "",
+			check: false,
+			msg: "",
+			email: "",
+			day: 00,
+			hour: 0,
+			min: 0,
+			sec: 0,
+			endTime: "2020-09-01 00:00:00"
+		},
+		created: function () {
+			this.countDown()
+		},
+		methods: {
+			showPopup: function (tag) {
+				this.popupIndex = tag
+			},
+			sendEmail: function () {
+				var self = this;
+
+				self.msg = "表單傳送中..."
+				self.popupIndex = 1
+
+				var content = "姓名:" + self.name + "<br>" +
+					"聯絡電話:" + self.phone + "<br>" +
+					"電子信箱:" + self.email + "<br>";
+				Email.send({
+					SecureToken: "e72b0d9a-0075-4eff-8b5e-74df58c177e4", //勿更動
+					To: 'neocic1111@gmail.com', //收件者填這
+					From: "tt836427@gmail.com", //寄件者email，此為虛擬，勿更動
+					Subject: "我要預約看房", //信件主旨
+					Body: content
+				}).then(
+					message => {
+						if (message == "OK") {
+							self.msg = "感謝您的預約， 將有專人與您聯絡。"
+							setTimeout(function () {
+								self.popupIndex = 0
+							}, 3000);
+						} else {
+							self.msg = "表單送出失敗，請重新送出。"
+						}
+					}
+				);
+			},
+			countDown: function () {
+				var salf = this
+				var endTime = moment(salf.endTime)
+				var timer = setInterval(() => {
+					var nowTime = moment()
+					var duration = moment.duration(endTime.diff(nowTime))
+					var day = parseInt(duration.asDays()) >= 0 ? parseInt(duration.asDays()) : 0
+					var hour = duration.get('hours') >= 0 ? duration.get('hours') : 0
+					var min = duration.get('minutes') >= 0 ? duration.get('minutes') : 0
+					var sec = duration.get('seconds') >= 0 ? duration.get('seconds') : 0
+
+					if (day == 0 && hour == 0 && min == 0 && sec == 0) {
+						clearInterval(timer)
+						return
+					}
+					salf.day = day
+					salf.hour = hour
+					salf.min = min
+					salf.sec = sec
+				}, 1000)
+			}
+		}
+	})
+</script>
+<script>
+
+	//make snow
+	snowDrop(150, randomInt(1035, 1280));
+	snow(150, 150);
+
+	function snow(num, speed) {
+		if (num > 0) {
+			setTimeout(function () {
+				$('#drop_' + randomInt(1, 250)).addClass('animate');
+				num--;
+				snow(num, speed);
+			}, speed);
+		}
+	};
+
+	function snowDrop(num, position) {
+		if (num > 0) {
+			var drop = '<div class="drop snow" id="drop_' + num + '"></div>';
+
+			$('.ribbon').append(drop);
+			$('#drop_' + num).css('left', position);
+			num--;
+			snowDrop(num, randomInt(60, 1920));
+		}
+	};
+
+	function randomInt(min, max) {
+		return Math.floor(Math.random() * (max - min + 1) + min);
+	};
+
+</script>
+
+</html>
